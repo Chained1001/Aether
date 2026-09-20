@@ -4,7 +4,9 @@
   "ignores": [
     ".zcode/**",
     "node_modules/**",
-    ".tmp/**"
+    ".tmp/**",
+    ".agents/**",
+    ".claude/skills/**"
   ],
   "config": {
     // 行长上限：中文与代码混排不适配 80 列，以段落可读性为准

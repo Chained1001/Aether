@@ -1,6 +1,6 @@
 # Changelog
 
-本文件记录 Abzu 的显著变更。格式遵循 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)，版本遵循 [SemVer](https://semver.org/lang/zh-CN/)。
+本文件记录 Aether（原 Abzu，2026-09-19 更名）的显著变更。格式遵循 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)，版本遵循 [SemVer](https://semver.org/lang/zh-CN/)。
 
 ## 目录
 
@@ -69,6 +69,7 @@
 
 ### Changed
 
+- 项目更名 Abzu → **Aether**（作者裁定 2026-09-19）：GitHub 仓库同步改名（`Chained1001/Aether`），安装命令改为 `npx skills add Chained1001/Aether -y`；宪法项目一句、README、产品定义、架构设计、SKILL 描述、验收场景、命名标准的目录树同步换名；**skill 前缀同批全换**（`abzu-outline` → `aether-outline`，目录 git mv、调用改 `/aether-outline`、卷纲正文占位域同步 `aether-volume`／`aether-write`——用户须重装 skill 并重启 Claude Code）。本地文件夹名待作者会话收尾后手动改。
 - 不做清单解冻并销项：**doc-budget 字数预算**（每批必读件字数预算）——`check.sh` [3] 段与 `scripts/check_content.py` 的 `_check_budget()` 已实现并常跑，冻结条件自破；作者裁定随批 117 （`docs/specs/117-2026-09-17-审计修复与脚本瘦身批.md`）规格确认作出，AGENTS §四 不做清单同步删项。
 
 - 修订工具形态闸修复（轻路径）：`patch_file.py` 的形态闸补显式 `encoding`——原 `subprocess.run(text=True)` 在 Windows 默认 GBK 解码 markdownlint 的 UTF-8 输出，崩在取 `returncode` 前，致闸恒判未过、明细被吞。修后正例放行、反例被拦并给明细、零写盘。核验：`check.sh` 全绿。

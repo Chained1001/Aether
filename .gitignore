@@ -8,3 +8,6 @@ Thumbs.db
 *.patch-tmp
 *.shapecheck.md
 .mimosa/
+.agents/
+.claude/skills/
+skills-lock.json

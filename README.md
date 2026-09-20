@@ -1,11 +1,11 @@
-# Abzu
+# Aether
 
 跑在 Claude Code 上的 AI 写作 skill 套件——面向长篇网文的阶段化创作流程。
 
 ## 安装
 
 ```bash
-npx skills add Chained1001/Abzu -y
+npx skills add Chained1001/Aether -y
 ```
 
 装后须**重载宿主窗口**——`/` 菜单在窗口激活时取一次命令快照，同窗口内新装的 skill 不会中途补入。
@@ -15,9 +15,9 @@ npx skills add Chained1001/Abzu -y
 只认**标准技能名显式调用**（自然语言提及不触发）：
 
 ```text
-/abzu-outline     大纲：立项、设定、全书总纲     [已建（阶段一）]
-/abzu-volume      卷纲：单卷规划与收卷判断       [未建]
-/abzu-write       正文：章纲与章节撰写           [未建]
+/aether-outline     大纲：立项、设定、全书总纲     [已建（阶段一）]
+/aether-volume      卷纲：单卷规划与收卷判断       [未建]
+/aether-write       正文：章纲与章节撰写           [未建]
 ```
 
 未建域敲入命令时如实告知「该域尚未建设」，不模拟、不产出占位内容。建设状态以[架构设计](docs/product/架构设计.md) §一 为准。
